@@ -1,0 +1,19 @@
+# 20
+20
+#define N 5
+double rec(int i)
+{
+   double s=0;
+   if(i==1)
+	   s=1;
+   else
+	   s=i*rec(i-1);
+   return s;
+}
+int main()
+{
+   double m;
+   m=rec(N);
+   printf("%2d!=%.01f\n",N,m);
+	return 0;
+}
